@@ -4,7 +4,7 @@
  
 Arrays são as formas mais simples de estrutura de dados, por isso, estão
 presentes em todas linguagens de programação. Via de regra, são sequencias
-de valores de um mesmo tipo. EM JavaScript, é possível guardar tipos diferentes 
+de valores de um mesmo tipo. Em JavaScript, é possível guardar tipos diferentes 
 de dados em um mesmo array. Porém, as melhores práticas recomendam utilizar 
 apenas um tipo de dado.
 

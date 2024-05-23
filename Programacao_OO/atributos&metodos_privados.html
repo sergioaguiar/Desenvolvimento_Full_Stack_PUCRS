@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Imposto {
+            constructor(nome, salario) {
+                this.nome = nome;
+                this.salario = salario;
+            }
+
+            #porcentagemImposto = 0.2;
+
+            #calculaImposto() {
+                return this.salario * this.#porcentagemImposto;
+            }
+
+            obterSalarioLiquido() {
+                return this.salario - this.#calculaImposto();
+            }
+        }
+
+        let pessoa = new Imposto("José", 1000);
+        //pessoa.#calculaImposto();  // Essa linha gera erro, pois o método privado  
+                                    //não pode ser acessadofora da classe.
+        console.log(`O salário líquido de ${pessoa.nome} é R$${pessoa.obterSalarioLiquido()},00.`)
+       /* Porém, se o código da linha 31 for rodado diretamente no console, ele funciona.
+       Por algum motivo o console está permitindo acessar metodos e atributos privados*/ 
+    </script>
+</body>
+
+</html>

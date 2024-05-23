@@ -55,8 +55,7 @@ Obs.: O atributo tail é obrigatório em Doubly Linked List.
                     Searching   - O(n)
                     Access      - O(n)
 ********************************************************************/
-/*Adaptado do curso JavaScript Algorithms and Data Structures Masterclass(Colt)
-e do Do livro Learning JS Data Structures and Algorithms (Loiane Groner)*/
+/*Adaptado do livro Learning JS Data Structures and Algorithms (Loiane Groner)*/
 
 class Node {
     constructor(val) {

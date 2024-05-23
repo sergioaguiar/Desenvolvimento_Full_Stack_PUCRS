@@ -54,8 +54,7 @@ Obs.: O atributo tail não é obrigatório, mas facilita a implementação
                     Searching   - O(n)
                     Access      - O(n)
 ********************************************************************/
-/*Adaptado do curso JavaScript Algorithms and Data Structures Masterclass(Colt)
-e do Do livro Learning JS Data Structures and Algorithms (Loiane Groner)*/
+/*Adaptado do livro Learning JS Data Structures and Algorithms (Loiane Groner)*/
 
 export class Node {
     constructor(element) {

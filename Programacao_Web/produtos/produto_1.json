@@ -1,0 +1,7 @@
+{
+    "id": 1,
+    "nome": "Toyota Corolla",
+    "preco": 90000.0,
+    "imagem": "corolla.jpg",
+    "descricao": "O Toyota Corolla é um carro compacto fabricado pela Toyota. Ele é conhecido por sua confiabilidade e eficiência de combustível."
+}

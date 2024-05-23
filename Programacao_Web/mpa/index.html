@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Carros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Carros Disponíveis</h1>
+    <div class="lista">
+      <!-- Aqui será preenchida dinamicamente com os carros -->
+    </div>
+    <ul class="links">
+      <li><a href="../index.html" class="link-inicial">Ir para a página inicial</a></li>
+    </ul>
+  </div>
+
+  <script>
+    async function carregarLista() {
+      // Faz a requisição ao arquivo JSON com a lista de carros
+      const response = await fetch('../produtos/produtos.json');
+      const carros = await response.json();
+
+      // Seleciona o contêiner da lista e limpa seu conteúdo
+      const lista = document.querySelector('.lista');
+      lista.innerHTML = '';
+
+      // Itera sobre a lista de carros e cria elementos para cada um
+      carros.forEach(carro => {
+        const item = document.createElement('div');
+        item.className = 'item';
+
+        const link = document.createElement('a');
+        link.href = `produto_${carro.id}.html`;
+
+        const img = document.createElement('img');
+        img.src = `../produtos/${carro.imagem}`;
+        img.alt = `Imagem do ${carro.nome}`;
+        link.appendChild(img);
+
+        const nome = document.createElement('div');
+        nome.className = 'nome';
+        nome.innerText = carro.nome;
+        link.appendChild(nome);
+
+        const preco = document.createElement('div');
+        preco.className = 'preco';
+        preco.innerText = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(carro.preco);
+        link.appendChild(preco);
+
+        item.appendChild(link);
+        lista.appendChild(item);
+      });
+    }
+
+    // Carrega a lista de carros quando a página é carregada
+    document.addEventListener('DOMContentLoaded', carregarLista);
+  </script>
+</body>
+
+</html>
+

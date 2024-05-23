@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Metadados essenciais para a página -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Carro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css">
+  <!-- Script para carregar os detalhes do carro -->
+  <script>
+    async function carregarDetalhes() {
+      // Faz a requisição ao arquivo JSON específico do carro
+      const response = await fetch('../produtos/produto_1.json');
+      const carro = await response.json();
+      
+      // Atualiza o título e os elementos da página com as informações do carro
+      document.querySelector('title').innerText = carro.nome;
+      document.querySelector('.titulo').innerText = carro.nome;
+      document.querySelector('.preco').innerText = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(carro.preco);
+      document.querySelector('.descricao').innerText = carro.descricao;
+      document.querySelector('.imagem').src = `../produtos/${carro.imagem}`;
+      document.querySelector('.imagem').alt = `Imagem do ${carro.nome}`;
+    }
+
+    // Carrega os detalhes do carro quando a página é carregada
+    document.addEventListener('DOMContentLoaded', carregarDetalhes);
+  </script>
+</head>
+
+<body>
+  <div class="detalhe">
+    <h1 class="titulo">Carregando...</h1>
+    <div class="preco">Carregando...</div>
+    <img class="imagem" src="" alt="">
+    <div class="descricao">Carregando...</div>
+    <a class="voltar" href="index.html">Voltar à lista</a>
+  </div>
+</body>
+
+</html>

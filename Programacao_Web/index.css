@@ -1,0 +1,59 @@
+/* Definindo a fonte padrão e o fundo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0f2f5;
+  color: #444;
+  padding: 2rem;
+  margin: 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Estilizando a lista */
+ul {
+  padding: 0;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Estilizando os itens da lista */
+li {
+  margin: 0;
+  padding: 1rem;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s;
+}
+li:last-child {
+  border-bottom: none;
+}
+li:hover {
+  background: #f9f9f9;
+}
+
+/* Estilizando os links */
+a, a:visited {
+  color: #007BFF;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+/* Estilizando o título */
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+

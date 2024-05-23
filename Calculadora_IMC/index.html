@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora de IMC</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Roboto:100,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+<header>
+  <div class="container"> <a href="index.html" target="_self"><img src="Imagens/bathroom-scale.svg" alt="balança de banheiro"/></a>
+    <h1>Calculadora<br/>
+      de IMC</h1>
+  </div>
+</header>
+	
+<nav>
+  <div class="container"> <a class="botao" href="index.html" target="_self">INÍCIO</a> <a class="botao" href="sobre.html" target="_self">SOBRE</a> </div>
+</nav>
+	
+<div id="flexible" class="container">
+	
+  <aside class="mainContent">
+    <h2>O que é IMC?</h2>
+    <p>O Índice de Massa Corporal (IMC) é um parâmetro adotado pela Organização Mundial da Saúde para verificação do peso ideal da pessoa.</p>
+    <p>O IMC é calculado pela razão entre o peso (kg) e a altura ao quadrado (m<spam id="quadrado">2</spam>). O resultado pode ser confrontado com o quadro abaixo para saber sua condição.</p>
+    <table id="myTable">
+      <tbody>
+        <tr>
+          <th scope="col">IMC</th>
+          <th scope="col">Condição</th>
+        </tr>
+        <tr>
+          <td>&#60; 18,5</td>
+          <td>Baixo peso</td>
+        </tr>
+        <tr>
+          <td>18,5 - 25</td>
+          <td>Peso ideal</td>
+        </tr>
+        <tr>
+          <td>25 - 30</td>
+          <td>Sobrepeso</td>
+        </tr>
+        <tr>
+          <td>30 - 35</td>
+          <td>Obesidade Grau 1</td>
+        </tr>
+        <tr>
+          <td>35 - 40</td>
+          <td>Obesidade Grau 2</td>
+        </tr>
+        <tr>
+          <td>&gt; 40</td>
+          <td>Obesidade Grau 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </aside>
+	
+  <main>
+    <div id="formulario" class="mainContent">
+      <h2>Calcule seu IMC</h2>
+      <form>
+        <p>Altura em metros (ex.: 1,75)</p>
+        <input type="text" id = "altura">
+        <p>Peso em kilogramas (ex.: 68,9)</p>
+        <input type="text" id = "peso">
+        <br/>
+        <button id="calcular" type="button">Calcular</button>
+      </form>
+    </div>
+    <div id="resultado" class="mainContent">
+      <h2>Resultado</h2>
+      <img src="Imagens/settings.svg" alt="Engrenagens"/>
+      <h4>IMC:
+        <spam id="IMC"></spam>
+      </h4>
+      <h4>Condição:
+        <spam id="condicao"></spam>
+      </h4>
+    </div>
+  </main>
+	
+</div>
+	
+<footer>
+  <div id="footerFlexible" class="container">
+    <h5>
+      <div>
+        <spam>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.9311e3d3fd4410161a9b25f442d52cc6.1561065621630.1561065621630.1561065621630.1&__hssc=57440181.6.1561065621631&__hsfp=2385336230" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a></spam>
+        <spam> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" 	target="_blank">CC 3.0 BY</a></spam>
+      </div>
+    </h5>
+  </div>
+</footer>
+	
+<script type="text/javascript" src="script.js"></script>
+	
+</body>
+</html>

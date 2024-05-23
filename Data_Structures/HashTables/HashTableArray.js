@@ -18,7 +18,7 @@ Classe HashTableArray contendo
         4. keys(): retorna array com chaves Hash Table; e
         5. _hash(key): gera numero hash auxiliando set(key, value) e get(key) (private).
 *************************************************************************/
-/*Do curso JavaScript Algorithms and Data Structures Masterclass (Colt) */
+
 
 // Classe Hash Table
 class HashTableArray {

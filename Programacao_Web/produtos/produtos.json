@@ -1,0 +1,5 @@
+[
+    { "id": 1, "nome": "Toyota Corolla", "preco": 90000.0, "imagem": "corolla.jpg" },
+    { "id": 2, "nome": "Honda Civic", "preco": 95000.0, "imagem": "civic.jpg" },
+    { "id": 3, "nome": "Ford Focus", "preco": 80000.0, "imagem": "focus.jpg" }
+]

@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* Style Sheet */
+
+/* Instância global*/
+body {
+  background-color: #F2F8FE;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #909090;
+  font-size: medium;
+}
+h1, h2, h4, th, nav {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+h2 {
+  color: #6A6A6A;
+  font-size: 23px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+header {
+  background-color: #7ABAF2;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 2px 3px 8px rgba(123, 123, 123, 0.60);
+  padding: 5px 0px;
+  margin: -10px;
+}
+header img {
+  margin-top: 25px;
+  margin-left: 10%;
+  float: left;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+h1 {
+  margin-right: 5%;
+}
+nav {
+  background-color: #E2E2E2;
+  margin: -19px -10px 20px -10px;
+  text-align: center;
+  padding: 5px 0px;
+}
+.botao {
+  color: #9E9E9E;
+  font-weight: 400;
+  border-style: none;
+  margin: 0 15%;
+  text-decoration: none;
+}
+aside {
+  padding: 0px 20px 20px 20px;
+  border: thin solid #707070;
+  border-radius: 20px;
+  box-shadow: 5px 5px 6px;
+  width: 45%;
+  flex-grow: 1;
+  margin: 0px 7px 20px 7px;
+}
+#myTable {
+  margin: 20px auto 0px auto;
+  border-collapse: collapse;
+  padding-top: 0px;
+  text-align: center;
+  width: 90%;
+}
+th, td {
+  border: 1px solid #C1C1C1;
+}
+th {
+  background-color: #E2E2E2;
+}
+main {
+  width: 45%;
+  flex-grow: 1;
+  margin: 0px 7px 20px 7px;
+}
+#formulario {
+  padding: 0px 20px 20px 20px;
+  border: thin solid #707070;
+  border-radius: 20px;
+  box-shadow: 5px 5px 6px;
+}
+#formulario input {
+  margin-left: 15px;
+  text-align: left;
+  padding: 5px 10px;
+  border: thin solid #707070;
+  border-radius: 7px;
+}
+#resultado {
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: thin solid #707070;
+  border-radius: 20px;
+  box-shadow: 5px 5px 6px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+#resultado img {
+  float: right;
+  margin-top: -20px;
+  display: block;
+}
+#resultado img:after {
+  clear: right;
+}
+footer {
+  background-color: #4682B4;
+  text-align: center;
+  font-weight: 100;
+  color: #F2F8FE;
+  padding: 1px 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #F2F8FE;
+}
+.mainContent {
+  background-color: #FFFFFF;
+  padding-top: 0px;
+}
+.container {
+  max-width: 907px;
+  margin: 0px auto;
+}
+.container p, h4 {
+  margin-left: 15px;
+}
+#calcular {
+  margin: 15px auto 0px auto;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #FFFFFF;
+  background-color: #B2B2B2;
+  border: thin solid #707070;
+  border-radius: 7px;
+  display: block;
+  padding: 3px 40px;
+  font-weight: 400;
+  font-size: 14pt;
+}
+#quadrado {
+  vertical-align: super;
+  font-size: x-small;
+}
+#sobre {
+  padding: 0px 20px 20px 20px;
+  border: thin solid #707070;
+  border-radius: 20px;
+  box-shadow: 5px 5px 6px;
+  background-color: #FFFFFF;
+  margin-left: 0px 7px;
+  width: 100%;
+}
+#formulario p {
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+#flexible {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: stretch;
+}
+#IMC, #condicao {
+  font-weight: normal;
+}
+.linkParagrafo {
+  color: #909090;
+}
+#footerFlexible {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+dl {
+  margin-left: 35px;
+}
+dt {
+  font-weight: bold;
+}
+
+
+/* Instância para tablet*/
+@media (max-width:850px) and (min-width:657px) {
+  header img {
+    width: 167.41px;
+    height: 171.76px;
+    margin-top: 7px;
+  }
+  header {
+    font-size: 30px;
+    padding-bottom: 26px;
+  }
+  table {
+    margin-top: 0px;
+  }
+  #resultado img {
+    width: 62.8px;
+  }
+  #formulario p {
+    font-size: 10pt;
+  }
+  th, td {
+    font-size: 10pt;
+  }
+}
+
+
+/* Instância para celular*/
+@media (max-width:656px) {
+  header {
+    font-size: 20px;
+  }
+  header img {
+    width: 116.17px;
+    height: 123.16px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #resultado img {
+    width: 62.8px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  nav a {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #formulario p {
+    font-size: 10pt;
+  }
+  th, td {
+    font-size: 10pt;
+  }
+  aside p {
+    font-size: 12pt;
+  }
+}
+
+/* Segunda instância para celular*/
+@media (max-width:490px) {
+  footer spam {
+    display: block;
+  }
+}
